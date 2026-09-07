@@ -19,3 +19,4 @@ input("Minus the same number you added in beginning and hit enter (DO NOT TYPE):
 answer = my_number / 2
 
 print(f"The answer is -> {answer} 😊")
+
