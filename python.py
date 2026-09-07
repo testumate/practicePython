@@ -1,36 +1,21 @@
-# num = int(input("Enter you number from 1-10: "))
-
-# while num < 0 or num > 10:
-#     print("Out of range > 1-10")
-#     num = int(input("Enter you number from 1-10: "))
-
-# print(f"your number is {num}")
-
-# rows = int(input("Enter you number of rows: "))
-# cols = int(input("Enter you number of cols: "))
-# symbol = input("Enter shape of symbol you want: ")
-
-# for r in range(rows):
-#     for c in range(cols):
-#         print(symbol, end="")
-#     print()
-# for x in range(1, 10):
-#     if x == 5:
-#      break
-#     print(x, end=" ")
-# Generates an increasing triangle of stars
-# rows = 5
-# for i in range(1, rows + 1):
-#     for j in range(1, i + 1):
-#         print("*", end=" ")
-#     print()
-# Centers stars by printing leading spaces first
-# rows = 5
-# for i in range(1, rows + 1):
-#     print(" " * (rows - i) + "* " * i)
-for i in range(1, 10):
-    # if i % 2 == 1: find even
-        print(str((i)) + " supercalifragilisticexpialidocis")
+import random
 
 
-        
+input("pick a number from 1-100 and hit enter (DO NOT TYPE): ")
+input("add the same number that you picked and hit enter (DO NOT TYPE): ")
+
+#add logic to genrate random number then removing odd number
+my_number = random.randint(1,100)
+if my_number % 2 == 1:
+    my_number -= 1
+print(my_number)
+
+input("add the above number and hit enter (DO NOT TYPE): ")
+input("Now minus the half from totel you have and hit enter (DO NO" \
+"T TYPE): ")
+input("Minus the same number you added in beginning and hit enter (DO NOT TYPE): ")
+
+#formula to calculate the answer
+answer = my_number / 2
+
+print(f"The answer is -> {answer} 😊")
